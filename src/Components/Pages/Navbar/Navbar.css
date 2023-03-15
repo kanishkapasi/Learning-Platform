@@ -1,0 +1,71 @@
+.navContainer {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  z-index: 1000;
+  background-color: #f6f5f4;
+}
+
+.navContainer .navbarContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navContainer .navbarContainer .right ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  padding-top: 10px;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.navContainer .navbarContainer .right ul li {
+  list-style: none;
+  font-weight: 600;
+}
+
+.navContainer .navbarContainer .right ul .list {
+  text-decoration: none;
+  color: black;
+}
+
+.navContainer .navbarContainer .icon {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .navContainer .navbarContainer .icon {
+    display: block;
+  }
+  .navContainer .navbarContainer .right ul {
+    display: none;
+  }
+  .navContainer .navbarContainer .right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    top: 70px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    position: absolute;
+    background-color: #f6f5f4;
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.4s;
+    z-index: 2000;
+  }
+
+  .navContainer .navbarContainer .right ul li:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+}

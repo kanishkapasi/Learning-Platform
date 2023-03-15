@@ -1,0 +1,244 @@
+.mainHomeContainer {
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+/* First Home Section */
+.homeContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 20px;
+  margin-top: 40px;
+}
+.homeContainer .right {
+  padding: 10px;
+}
+.homeContainer .right .childImage {
+  width: 600px;
+  height: 400px;
+}
+
+.homeContainer .left {
+  padding: 10px;
+}
+.homeContainer .left h5 {
+  color: #2b788b;
+}
+
+.homeContainer .left h1 {
+  font-weight: 700;
+}
+
+.homeContainer .left p {
+  font-size: 18px;
+}
+
+.homeContainer .left button {
+  border-radius: 20px;
+  background-color: #c3dce3;
+  color: #2b788b;
+  box-shadow: 0px 0px 20px #2b788b;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.homeContainer .left button:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.homeContainer .left .games {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 680px) {
+  .homeContainer .right .childImage {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .homeContainer .right .childImage {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+/* End Of First Home Section */
+
+/* Second Home Section */
+.learnContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 10px;
+}
+.navContainer .navbarContainer .learnLeft {
+  padding: 10px;
+}
+
+.navContainer .navbarContainer .learnRight {
+  padding: 10px;
+}
+
+.learnContainer .learnRight .boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.learnContainer .learnRight .boxes .mini {
+  display: flex;
+  justify-content: center;
+  background-color: #f2d4dc;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100px;
+  height: 60px;
+  color: #945069;
+  transition: all 0.4s;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px #945069;
+}
+
+.learnContainer .learnRight .boxes .mini:hover {
+  transform: (scaleX(1.15) scaleY(1.15));
+}
+
+.learnContainer .learnRight .boxes .mini:nth-child(2) {
+  color: #c3dce3;
+  background-color: #2b788b;
+  box-shadow: 0px 0px 20px #2b788b;
+}
+
+@media screen and (max-width: 590px) {
+  .learnContainer .learnLeft .learnIcon {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .learnContainer .learnLeft .learnIcon {
+    width: 300px;
+    height: 250px;
+  }
+}
+/* End Of second Home Section */
+
+/* Third Home Section */
+.textContainer {
+  margin-top: 70px;
+  width: 100%;
+  background-color: #f6f5f4;
+  margin: auto;
+}
+
+.textContainer .textsubContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap-reverse;
+}
+
+.textContainer .textsubContainer .textLeft {
+  padding: 10px;
+}
+
+.textContainer .textsubContainer .textRight {
+  padding: 10px;
+}
+
+.textContainer .textsubContainer .textRight button {
+  background-color: #2b788b;
+  color: #c3dce3;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #2b788b;
+}
+
+@media screen and (max-width: 660px) {
+  .textContainer .textsubContainer .textLeft .threeIcon {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .textContainer .textsubContainer .textLeft .threeIcon {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* End Of third home Section */
+
+/* Fourth Home Section */
+.progressContainer {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  gap: 3rem;
+}
+
+.progressContainer .progLeft {
+  padding: 10px;
+}
+
+.progressContainer .progLeft .progIcon {
+  width: 500px;
+  height: 400px;
+}
+
+.progressContainer .progRight {
+  padding: 10px;
+}
+
+.progressContainer .progRight button {
+  padding: 10px;
+  background-color: #2b788b;
+  box-shadow: 0px 0px 20px #2b788b;
+  color: #c3dce3;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+}
+
+@media screen and (max-width: 790px) {
+  .progressContainer .progLeft .progIcon {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .progressContainer .progLeft .progIcon {
+    width: 300px;
+    height: 250px;
+  }
+}
+/* End Of Fourth Home Section */
